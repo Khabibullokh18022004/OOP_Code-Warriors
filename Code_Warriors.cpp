@@ -125,13 +125,14 @@ class MANAGER
 
 int main (){
     int task;
+    system ("clear");
     cout <<" >>>>>>>>>>>>> Welcome to movie ticket booking program <<<<<<<<<<<<<<<\n";
     cout <<" *                Please choose one option below ==>>                *\n";;;;;
     cout <<" *                     [1] Administrator                             *\n";
     cout <<" *                     [2] Manager                                   *\n";
     cout <<" *                     [3] External users                            *\n";
     cout <<" *                     [4] Quit the program                          *\n";
-                       
+    cout <<" >>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n";                   
     cin >> task;
    if (task == 1){
     ADMIN a;
