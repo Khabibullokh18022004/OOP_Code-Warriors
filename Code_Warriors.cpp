@@ -125,6 +125,7 @@ class MANAGER
 
 int main (){
     int task;
+    cout << "Ddsfasdf\n";
     cout <<" >>>>>>>>>>>>> Welcome to movie ticket booking program <<<<<<<<<<<<<<<\n";
     cout <<" *                Please choose one option below ==>>                *\n";;;;;
     cout <<" *                     [1] Administrator                             *\n";
