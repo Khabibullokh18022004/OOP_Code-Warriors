@@ -3,7 +3,6 @@
 #include <cstring>
 #include <string>
 using namespace std;
-cout <<"hey it is to check\m";
 class USER
 {
     private:
