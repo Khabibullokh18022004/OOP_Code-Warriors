@@ -1,8 +1,11 @@
 #include <iostream>
 #include <fstream>
-#include <cstring>
+#include <cstring> 
 #include <string>
 using namespace std;
+
+
+
 class USER
 {
     private:
@@ -43,11 +46,14 @@ class USER
         
  };
 
+
 class ADMIN
 {
     private:
     string admin_id;
     string admin_pass;
+    const int SIZE = 7;
+    int length;
     public:
     ADMIN()
     {
@@ -55,12 +61,10 @@ class ADMIN
         admin_pass= "20040218";
     }
     void AdminLogin()
-    {   const int SIZE = 7;
-        int length;
+    {   char aid[SIZE];
         cout <<"\t\t\t>> Welcome <<\n\n"<<endl;
         cout <<"Please enter your ID number and password to check in our database:\n\n\n";
         cout<<"Please Enter ID number = U";
-        char aid[SIZE];
         cin>>aid;
         length=strlen(aid);
         while(length!=7){
@@ -74,7 +78,8 @@ class ADMIN
         cin>>apass;
         if(aid==admin_id && apass==admin_pass)
         {
-            cout<<"Logged succesfully!";
+            cout<<"Congratulations you logged succesfully to the system!!!";
+            cout<< "Our dear U"<< admin_id<< endl;
         }
         else{
             cout<<"Check ID or password and try again...\n\n"<<endl;
@@ -87,24 +92,32 @@ class ADMIN
     }
 };
 
+
 class MANAGER
 {
     private:
     string manager_id;
     string manager_pass;
+    const int SIZE = 7;
+    int length;
+    string mpass;
     public:
     MANAGER()
     {
-        manager_id="MTBOM";
-        manager_pass="manager123";
+        manager_id="1234567";
+        manager_pass="20040520";
     }
     void ManagerLogin()
-    {
-        cout<<"Enter ID: ";
-        string mid;
+    {   char mid[SIZE];
+        cout<<"Enter ID = U";
         cin>>mid;
+        while(length!=7){
+        cout<<"Unfortunately, ID length must be 7 digits"<<endl;
+        cout<<"Please Enter ID number = U";
+        cin>>mid;
+        length=strlen(mid);
+    }   
         cout<<"Enter password: ";
-        string mpass;
         cin>>mpass;
         if(manager_id==mid && manager_pass==mpass)
         {
